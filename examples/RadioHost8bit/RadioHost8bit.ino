@@ -56,9 +56,9 @@ unsigned long streamingIdleTimer;	// used to escape streamingData mode
 
 
 void setup(){
-  RFduinoGZLL.channel = 6;  // use channels 2-25. 1 is same as 0 and 0-8 in normal GZLL library
-  RFduinoGZLL.begin(role);  // start the GZLL stack
-  Serial.begin(115200);     // start the serial port
+  RFduinoGZLL.channel = 18;  // use 2 to 25
+  RFduinoGZLL.begin(role);   // start the GZLL stack
+  Serial.begin(115200);      // start the serial port
   
   initBuffer();  // prime the serialBuffer
   

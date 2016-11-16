@@ -73,7 +73,7 @@ int bytesInPacket;
 
 
 void setup(){
-  RFduinoGZLL.channel = 6;     // use channels 2-25. 1 is same as 0 and 0-8 in normal GZLL library
+  RFduinoGZLL.channel = 18;     // use channels 2-25
   RFduinoGZLL.begin(role);      // start the Gazelle stack
   Serial.begin(115200,3,2);     // start the serial port, rx = GPIO3, tx = GPIO2
   
