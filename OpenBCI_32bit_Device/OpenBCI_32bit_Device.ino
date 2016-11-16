@@ -60,7 +60,7 @@ int bytesInPacket;
 
 
 void setup(){
-  RFduinoGZLL.channel = 18;     // use channels 2-25
+  //RFduinoGZLL.channel = 18;     // use channels 2-25
   RFduinoGZLL.begin(role);      // start the Gazelle stack
   pinMode(PGCpin,INPUT);        // feel the state of the PIC with this pin
   Serial.begin(115200,3,2);     // start the serial port, rx = GPIO3, tx = GPIO2
